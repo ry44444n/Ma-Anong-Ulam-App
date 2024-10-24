@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.food-animation {
+    position: absolute;
+    top: 140px; /* Adjust this to position the chef hat higher */
+    left: 47%; /* Center horizontally */
+    transform: translateX(-50%); /* Align properly to center */
+    animation: float 5s ease-in-out infinite;
+  }
+  
+  .food-animation img {
+  width: 100px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0);  }
+  }
+
+  
